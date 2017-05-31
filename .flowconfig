@@ -1,0 +1,10 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/.*
+<PROJECT_ROOT>/libdefs.js
+[include]
+src/
+gulpfile.babel.js
+./flow-typed/**/*
+[libs]
+./libdefs.js
+[options]

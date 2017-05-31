@@ -1,0 +1,50 @@
+{
+  "name": "react-boiler-plate",
+  "version": "1.0.0",
+  "description": "this is my personal react boiler plate",
+  "main": "gulpfile.babel.js",
+  "repository": {},
+  "author": "Rodrigo Quezada <roderik.ikana@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "anser": "^1.2.7",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-latest": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "latest",
+    "eslint-config-standard": "^10.1.0",
+    "eslint-plugin-flowtype": "^2.32.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.4.1",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^3.0.0",
+    "flow-bin": "^0.44.2",
+    "flow-typed": "^2.1.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "merge-stream": "^1.0.1",
+    "run-sequence": "^1.2.2",
+    "stream-combiner2": "^1.1.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-stream": "^3.2.0"
+  },
+  "scripts": {
+    "dev": "gulp dev",
+    "deploy": "gulp deploy",
+    "postinstall": "flow-typed install --overwrite"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
