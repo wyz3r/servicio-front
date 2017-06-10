@@ -1,0 +1,17 @@
+.body-content{
+  display: flex;
+  height: calc(100vh - 64px);
+}
+.menu-side{
+  display: inline-block;
+  width: 238px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+}
+
+@media screen and (max-width: 680px) {
+    .menu-side{
+      width: 0px;
+      overflow: hidden;
+    }
+}

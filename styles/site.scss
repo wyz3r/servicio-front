@@ -1,1 +1,11 @@
 @import "normalize";
+body{
+  background: rgb(230, 230, 230);
+  background-color: white;
+}
+a:link
+{
+ text-decoration:none;
+}
+@import "login.scss";
+@import "body.scss";

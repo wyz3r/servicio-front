@@ -1,7 +1,19 @@
+# {
+#   "parser": "babel-eslint",
+#   "extends": ["airbnb","standard"],
+#   "plugins": [
+#     "flowtype"
+#   ]
+# }
 {
-  "parser": "babel-eslint",
-  "extends": ["airbnb","standard"],
-  "plugins": [
-    "flowtype"
-  ]
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "semi": 2
+    }
 }

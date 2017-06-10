@@ -1,0 +1,11 @@
+.login-home{
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  .login-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
