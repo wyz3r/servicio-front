@@ -40,8 +40,8 @@ class Root extends React.Component {
           <Menu style={menu}>
             <Link to="/admin/Asistencia" ><MenuItem leftIcon={<PersonAdd />} primaryText="Asistencia" /></Link>
             <Link to="/admin/altaProf" ><MenuItem  leftIcon={<PersonAdd />} primaryText="Alta de Profesores" /></Link>
-            <Link to="/admin/altaAlum" ><MenuItem  leftIcon={<School />} primaryText="Allta de Alumnos" /></Link>
-            <Link to="/admin/info" ><MenuItem  leftIcon={<PersonAdd />} primaryText="Info" /></Link>
+            <Link to="/admin/altaAlum" ><MenuItem  leftIcon={<School />} primaryText="Alta de Alumnos" /></Link>
+            <Link to="/admin/info" > <MenuItem leftIcon={<PersonAdd />} primaryText="Info" /></Link>
           </Menu>
         </Paper>
           { this.props.children }

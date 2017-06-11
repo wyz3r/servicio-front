@@ -1,0 +1,17 @@
+.admin-home{
+  width: 80%;
+  // max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+  .admin-content{
+    padding: 10px;
+    .admin-actions{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+}
