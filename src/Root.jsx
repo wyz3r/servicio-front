@@ -6,10 +6,12 @@ import IconButton from 'material-ui/IconButton'
 import IconMenu from 'material-ui/IconMenu'
 import MenuItem from 'material-ui/MenuItem'
 import AppBar from 'material-ui/AppBar'
-import NavigationClose from 'material-ui/svg-icons/navigation/close';
+import NavigationClose from 'material-ui/svg-icons/navigation/close'
+import PersonAdd from 'material-ui/svg-icons/social/person-add'
+import School from 'material-ui/svg-icons/social/school'
 
 function handleTouchTap () {
-  alert('onTouchTap triggered on the title component');
+  alert('onTouchTap triggered on the title component')
 }
 
 class Root extends React.Component {
@@ -36,10 +38,10 @@ class Root extends React.Component {
         <Paper className="menu-side" style={open ? style : {width: '0', overflow: 'hidden'}}>
           {/* <AppBar title={<span >Title</span>} onTitleTouchTap={handleTouchTap} /> */}
           <Menu style={menu}>
-            <Link to="/admin/Asistencia" ><MenuItem primaryText="Asistencia" /></Link>
-            <Link to="/admin/altaProf" ><MenuItem primaryText="Alta de Profesores" /></Link>
-            <Link to="/admin/altaAlum" ><MenuItem primaryText="Allta de Alumnos" /></Link>
-            <Link to="/admin/info" ><MenuItem primaryText="Info" /></Link>
+            <Link to="/admin/Asistencia" ><MenuItem leftIcon={<PersonAdd />} primaryText="Asistencia" /></Link>
+            <Link to="/admin/altaProf" ><MenuItem  leftIcon={<PersonAdd />} primaryText="Alta de Profesores" /></Link>
+            <Link to="/admin/altaAlum" ><MenuItem  leftIcon={<School />} primaryText="Allta de Alumnos" /></Link>
+            <Link to="/admin/info" ><MenuItem  leftIcon={<PersonAdd />} primaryText="Info" /></Link>
           </Menu>
         </Paper>
           { this.props.children }
