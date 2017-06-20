@@ -37,7 +37,7 @@ class Root extends React.Component {
       <div className='container' style={container}>
         <AppBar title={<span >Menu</span>} onLeftIconButtonTouchTap={() => this.setState({sideMenu: true})} />
         <div className='body-content'>
-        <Paper className="menu-side" style={open ? style : {width: '0', overflow: 'hidden'}}>
+        <Paper className="menu-side" style={ style }>
           {/* <AppBar title={<span >Title</span>} onTitleTouchTap={handleTouchTap} /> */}
           <Menu style={menu}>
             <Link to="/admin/Asistencia" ><MenuItem leftIcon={<PersonAdd />} primaryText="Asistencia" /></Link>
