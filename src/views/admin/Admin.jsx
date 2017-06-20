@@ -6,10 +6,10 @@ import TextField from 'material-ui/TextField'
 import {CardTitle} from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
 import SearchIcon from 'material-ui/svg-icons/action/search'
+import config from '../../data/data.json'
 // import axios from ‘axios’
 // import cookie from 'react-cookie'
 
-const config = require('../../data/data.json')
 // const configCommunity = window.location.host.split(‘.’)[0]
 class Admin extends React.Component {
   constructor (props) {
@@ -21,6 +21,7 @@ class Admin extends React.Component {
   }
   componentWillMount () {
     document.title = `Admin`
+    console.log(config)
     // window.scrollTo(0, 0)
   }
   handleNameChange = (event) => {

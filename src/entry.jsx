@@ -10,6 +10,7 @@ import AppBar from 'material-ui/AppBar'
 
 import Login from './views/Login/Login'
 import Admin from './views/admin/Admin'
+import AddProf from './views/admin/AddProf'
 
 import Root from './Root'
 injectTapEventPlugin()
@@ -21,7 +22,7 @@ ReactDOM.render(
       {/* <IndexRoute component={Login} /> */}
       <Route path="/admin" component={Root} >
         <Route className="Login" path="/admin/Asistencia" component={Login} />
-        <Route className="Login" exact path="/admin/altaProf" component={Admin} />
+        <Route className="Login" exact path="/admin/altaProf" component={AddProf} />
         <Route className="Login" exact path="/admin/altaProf/alta" component={Admin} />
         <Route className="Login" exact path="/admin/altaAlum" component={Admin} />
         <Route className="Login" exact path="/admin/info" component={Admin} />

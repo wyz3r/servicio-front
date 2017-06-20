@@ -4,11 +4,9 @@ import Paper from 'material-ui/Paper'
 import TextField from 'material-ui/TextField'
 import {CardTitle} from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
-
+import config from '../../data/data.json'
 // import axios from ‘axios’
 import cookie from 'react-cookie'
-
-const config = require('../../data/data.json')
 // console.log(config)
 // const configCommunity = window.location.host.split(‘.’)[0]
 
