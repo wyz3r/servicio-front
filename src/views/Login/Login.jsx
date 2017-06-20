@@ -16,7 +16,7 @@ class Login extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      name: ''
+      clave: ''
     }
     this.loginClick = this.loginClick.bind(this)
   }
@@ -26,15 +26,16 @@ class Login extends React.Component {
     // window.scrollTo(0, 0)
   }
   handleNameChange = (event) => {
-    this.setState({ name: event.target.value })
+    // this.setState({ name: event.target.value })
   }
 
   loginClick () {
     // alert("hola mundo ")
     // console.log(this.state.value)
-    const name = this.state.name
-    if (name) {
-      console.log(name)
+    const {clave} = this.state
+    if (clave) {
+      console.log(clave)
+      window.location.href = '/admin'
     }
   }
   render () {
@@ -46,7 +47,7 @@ class Login extends React.Component {
       <div className="login-home">
         <Paper zDepth={3} className="login-content">
           <CardTitle title="Iniciar Sesión" />
-          <TextField maxLength="8" hintText="Clave Ulsa" style={style} underlineShow={true} onChange={this.handleNameChange} />
+          <TextField maxLength="8" hintText="Clave Ulsa" style={style} underlineShow={true} onChange={event => this.setState({clave: event.target.value})} />
           <RaisedButton label="Entrar" primary={true} onClick={() => { loginClick() }} />
         </Paper>
       </div>

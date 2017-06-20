@@ -19,7 +19,7 @@ class Admin extends React.Component {
     }
     this.loginClick = this.loginClick.bind(this)
   }
-  componentDidMount () {
+  componentWillMount () {
     document.title = `Admin`
     // window.scrollTo(0, 0)
   }
