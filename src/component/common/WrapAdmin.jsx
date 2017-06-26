@@ -13,7 +13,7 @@ import Schedule from 'material-ui/svg-icons/action/schedule'
 import Info from 'material-ui/svg-icons/action/info'
 import Drawer from 'material-ui/Drawer'
 
-class Root extends React.Component {
+class WrapAdmin extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -63,4 +63,4 @@ class Root extends React.Component {
   }
 }
 
-export default Root
+export default WrapAdmin

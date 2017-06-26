@@ -11,7 +11,7 @@ import SearchIcon from 'material-ui/svg-icons/action/search'
 // import cookie from 'react-cookie'
 
 // const configCommunity = window.location.host.split(‘.’)[0]
-class ListaProf extends React.Component {
+class ListaAlumn extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -44,10 +44,13 @@ class ListaProf extends React.Component {
     return (
       <div className="admin-home">
         <Paper zDepth={2} className="admin-content">
-          <CardTitle title="Lista de profesores" />
+          <CardTitle title="Lista de Alumnos" />
           <div className='admin-actions'>
-            <Link to="/admin/altaProf" ><RaisedButton label="Alta" primary={true} /></Link>
-            <div>
+            <div className="button-content">
+              <Link to="/admin/altaAlum" ><RaisedButton label="Alta" primary={true} /></Link>
+              <Link to="/admin/altaAlum" ><RaisedButton label="Editar" secondary={true} /></Link>
+            </div>
+            <div className="search-content">
               <SearchIcon style={{marginBottom: '-10px'}}/><TextField hintText="Buscar" />
             </div>
           </div>
@@ -57,4 +60,4 @@ class ListaProf extends React.Component {
   }
 }
 
-export default ListaProf
+export default ListaAlumn

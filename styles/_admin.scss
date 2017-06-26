@@ -11,7 +11,40 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+      .button-content{
+
+      }
+      .search-content{
+
+      }
     }
   }
 
+}
+@media (max-width: 750px) {
+  .admin-home{
+    width: 100%;
+    // min-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    .admin-content{
+      padding: 10px;
+      .admin-actions{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+        .button-content{
+          order: 2;
+          margin-top: 10px;
+        }
+        .search-content{
+          order: 1;
+        }
+      }
+    }
+
+  }
 }

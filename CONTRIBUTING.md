@@ -1,1 +1,0 @@
-culaquiera puede contribuir
