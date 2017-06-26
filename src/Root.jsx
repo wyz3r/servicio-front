@@ -27,7 +27,7 @@ class Root extends React.Component {
     }
   }
   render () {
-    const {open, sideMenu} = this.state
+    const {sideMenu} = this.state
     const style = {
       boxShadow: 'rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px'
     }
@@ -44,8 +44,9 @@ class Root extends React.Component {
           {/* <AppBar title={<span >Title</span>} onTitleTouchTap={handleTouchTap} /> */}
           <Menu style={menu}>
             <Link to="/admin/Asistencia" ><MenuItem leftIcon={<Schedule />} primaryText="Asistencia" /></Link>
-            <Link to="/admin/altaProf" ><MenuItem leftIcon={<PersonAdd />} primaryText="Alta de Profesores" /></Link>
+            <Link to="/admin/ListaProf" ><MenuItem leftIcon={<Schedule />} primaryText="Lista Profesores" /></Link>
             <Link to="/admin/altaAlum" ><MenuItem leftIcon={<School />} primaryText="Alta de Alumnos" /></Link>
+            <Link to="/admin/altaProf" ><MenuItem leftIcon={<PersonAdd />} primaryText="Alta de Profesores" /></Link>
             <Link to="/admin/info" > <MenuItem leftIcon={<Info />} primaryText="Info" /></Link>
           </Menu>
         </Paper>
@@ -55,8 +56,9 @@ class Root extends React.Component {
           open={sideMenu}>
           <AppBar title={<span >Menu</span>} onLeftIconButtonTouchTap={() => this.setState({ sideMenu: false })} />
           <Link to="/admin/Asistencia" ><MenuItem leftIcon={<Schedule />} primaryText="Asistencia" /></Link>
-          <Link to="/admin/altaProf" ><MenuItem leftIcon={<PersonAdd />} primaryText="Alta de Profesores" /></Link>
+          <Link to="/admin/ListaProf" ><MenuItem leftIcon={<Schedule />} primaryText="Lista Profesores" /></Link>
           <Link to="/admin/altaAlum" ><MenuItem leftIcon={<School />} primaryText="Alta de Alumnos" /></Link>
+          <Link to="/admin/altaProf" ><MenuItem leftIcon={<PersonAdd />} primaryText="Alta de Profesores" /></Link>
           <Link to="/admin/info" > <MenuItem leftIcon={<Info />} primaryText="Info" /></Link>
        </Drawer>
           { this.props.children }

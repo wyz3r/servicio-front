@@ -9,8 +9,9 @@ import injectTapEventPlugin from 'react-tap-event-plugin'
 import AppBar from 'material-ui/AppBar'
 
 import Login from './views/Login/Login'
-import Admin from './views/admin/Admin'
-import AddProf from './views/admin/AddProf'
+import ListaProf from './views/admin/prof/ListaProf'
+import AddProf from './views/admin/prof/AddProf'
+import AddAlum from './views/admin/alumn/AddAlum'
 
 import Root from './Root'
 injectTapEventPlugin()
@@ -21,15 +22,15 @@ ReactDOM.render(
       <Route path="/" component={Login} />
       {/* <IndexRoute component={Login} /> */}
       <Route path="/admin" component={Root} >
-        <Route className="Login" path="/admin/Asistencia" component={Login} />
+        <Route className="Login" path="/admin/Asistencia" component={ListaProf} />
+        <Route className="Login" path="/admin/ListaProf" component={ListaProf} />
         <Route className="Login" exact path="/admin/altaProf" component={AddProf} />
-        <Route className="Login" exact path="/admin/altaProf/alta" component={Admin} />
-        <Route className="Login" exact path="/admin/altaAlum" component={Admin} />
-        <Route className="Login" exact path="/admin/info" component={Admin} />
+        <Route className="Login" exact path="/admin/altaProf/alta" component={ListaProf} />
+        <Route className="Login" exact path="/admin/altaAlum" component={AddAlum} />
+        <Route className="Login" exact path="/admin/info" component={ListaProf} />
       </Route>
       <Route path="/a" component={Root} >
       <Route className="Login" path="/a/login" component={Login} />
-      <Route className="Login" exact path="/a/admin" component={Admin} />
       </Route>
     </Router>
   </MuiThemeProvider>,

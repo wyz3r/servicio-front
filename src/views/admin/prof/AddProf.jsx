@@ -20,22 +20,38 @@ class AddProf extends Component {
           <div className='body-form'>
             <div className='section-form'>
               <TextField
-                hintText="Nombre"
+                floatingLabelText="Nombre"
               />
               <TextField
-                hintText="Nombre"
+                floatingLabelText="Nombre's"
               />
             </div>
             <div className='section-form'>
               <TextField
-                hintText="Apellido Paterno"
+                floatingLabelText="Apellido Paterno"
               />
               <TextField
-                hintText="Apellido Materno"
+                floatingLabelText="Apellido Materno"
               />
             </div>
             <div className='section-form'>
-              <DatePicker hintText="fecha de nacimiento" />
+              <TextField
+                floatingLabelText="Apellido Paterno"
+              />
+              <TextField
+                floatingLabelText="Apellido Materno"
+              />
+            </div>
+            <div className='section-form'>
+              <TextField
+                floatingLabelText="Apellido Paterno"
+              />
+              <TextField
+                floatingLabelText="Apellido Materno"
+              />
+            </div>
+            <div className='section-form-date'>
+              {/* <DatePicker className="date" hintText="fecha de nacimiento" /> */}
             </div>
             <div className='section-button-form'>
               <RaisedButton className='button' label="Guardar" primary={true} onClick={() => { console.log('mucho') }} />
