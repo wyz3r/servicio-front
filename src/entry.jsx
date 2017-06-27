@@ -11,7 +11,6 @@ import AppBar from 'material-ui/AppBar'
 import Login from './views/Login/Login'
 import ListaAlumn from './views/admin/alumn/ListaAlumn'
 import ListaProf from './views/admin/prof/ListaProf'
-
 import AddProf from './views/admin/prof/AddProf'
 import AddAlum from './views/admin/alumn/AddAlum'
 

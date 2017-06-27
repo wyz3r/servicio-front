@@ -5,6 +5,7 @@
 #     "flowtype"
 #   ]
 # }
+
 {
     "parserOptions": {
         "ecmaVersion": 6,
@@ -13,7 +14,20 @@
             "jsx": true
         }
     },
+      "globals": {
+        "fetch": true
+      },
     "rules": {
         "semi": 2
     }
 }
+# {
+#   "parser": "babel-eslint",
+#   "extends": ["airbnb","standard"],
+#   "plugins": [
+#     "flowtype"
+#   ],
+#   "globals": {
+#     "fetch": true
+#   }
+# }

@@ -1,0 +1,23 @@
+{
+  "data":[{
+    "nombre": "leonel",
+    "nombre2": "Aristides",
+    "apellidoP": "islas",
+    "apellidoM": "Gonzalez",
+    "edad": 28,
+    "carrera": "cibernética",
+    "tipo": "creditos",
+    "campus ": "Condesa"
+  },
+  {
+    "nombre": "Carlos",
+    "nombre2": "Alberto",
+    "apellidoP": "Enriquez",
+    "apellidoM": "ALvarez",
+    "edad": 24,
+    "carrera": "cibernética",
+    "tipo": "pasantia",
+    "campus ": "Condesa"
+  }
+  ]
+}

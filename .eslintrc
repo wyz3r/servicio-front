@@ -1,7 +1,12 @@
+# {
+#   "parser": "babel-eslint",
+#   "extends": "standard",
+#   "plugins": [
+#     "flowtype"
+#   ]
+# }
+
 {
   "parser": "babel-eslint",
-  "extends": "standard",
-  "plugins": [
-    "flowtype"
-  ]
+  "extends": "standard"
 }

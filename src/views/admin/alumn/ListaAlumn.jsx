@@ -6,6 +6,9 @@ import TextField from 'material-ui/TextField'
 import {CardTitle} from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
 import SearchIcon from 'material-ui/svg-icons/action/search'
+
+import config from '../../../data/alumnos.json'
+console.log(config.data)
 // import config from '../../data/data.json'
 // import axios from ‘axios’
 // import cookie from 'react-cookie'
@@ -42,13 +45,12 @@ class ListaAlumn extends React.Component {
     }
     const {loginClick} = this
     return (
-      <div className="admin-home">
+      <div className="list-home">
         <Paper zDepth={2} className="admin-content">
           <CardTitle title="Lista de Alumnos" />
           <div className='admin-actions'>
             <div className="button-content">
               <Link to="/admin/altaAlum" ><RaisedButton label="Alta" primary={true} /></Link>
-              <Link to="/admin/altaAlum" ><RaisedButton label="Editar" secondary={true} /></Link>
             </div>
             <div className="search-content">
               <SearchIcon style={{marginBottom: '-10px'}}/><TextField hintText="Buscar" />

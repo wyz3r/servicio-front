@@ -42,7 +42,7 @@ class ListaProf extends React.Component {
     }
     const {loginClick} = this
     return (
-      <div className="admin-home">
+      <div className="list-home">
         <Paper zDepth={2} className="admin-content">
           <CardTitle title="Lista de profesores" />
           <div className='admin-actions'>
