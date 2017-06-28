@@ -7,7 +7,7 @@
     "edad": 28,
     "carrera": "cibernética",
     "tipo": "creditos",
-    "campus ": "Condesa"
+    "campus": "Condesa"
   },
   {
     "nombre": "Carlos",
@@ -17,7 +17,37 @@
     "edad": 24,
     "carrera": "cibernética",
     "tipo": "pasantia",
-    "campus ": "Condesa"
+    "campus": "Condesa"
+  },
+  {
+    "nombre": "Carlos",
+    "nombre2": "Alberto",
+    "apellidoP": "Enriquez",
+    "apellidoM": "ALvarez",
+    "edad": 24,
+    "carrera": "cibernética",
+    "tipo": "pasantia",
+    "campus": "Condesa"
+  },
+  {
+    "nombre": "Carlos",
+    "nombre2": "Alberto",
+    "apellidoP": "Enriquez",
+    "apellidoM": "ALvarez",
+    "edad": 24,
+    "carrera": "cibernética",
+    "tipo": "pasantia",
+    "campus": "Condesa"
+  },
+  {
+    "nombre": "Carlos",
+    "nombre2": "Alberto",
+    "apellidoP": "Enriquez",
+    "apellidoM": "ALvarez",
+    "edad": 24,
+    "carrera": "cibernética",
+    "tipo": "pasantia",
+    "campus": "Condesa"
   }
   ]
 }

@@ -6,6 +6,14 @@ import TextField from 'material-ui/TextField'
 import {CardTitle} from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
 import SearchIcon from 'material-ui/svg-icons/action/search'
+import {
+  Table,
+  TableBody,
+  TableHeader,
+  TableHeaderColumn,
+  TableRow,
+  TableRowColumn,
+} from 'material-ui/Table'
 
 import config from '../../../data/alumnos.json'
 console.log(config.data)
@@ -18,9 +26,11 @@ class ListaAlumn extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      name: ''
+      name: '',
+      search: ''
     }
     this.loginClick = this.loginClick.bind(this)
+    this.search = ''
   }
   componentWillMount () {
     document.title = `Admin`
@@ -39,11 +49,35 @@ class ListaAlumn extends React.Component {
       console.log(name)
     }
   }
+  createTable (value) {
+    console.log(value)
+    if (value) {
+      return (
+        <TableBody>
+          {/* {config.data.filter().map(() => {
+          })} */}
+        </TableBody>)
+    }
+    return (
+      <TableBody displayRowCheckbox={false}>
+        {config.data.map(({nombre, apellidoP, apellidoM, carrera, campus}, key) => {
+          return (
+          <TableRow key={key} >
+            <TableRowColumn>{nombre}</TableRowColumn>
+            <TableRowColumn>{apellidoP}</TableRowColumn>
+            <TableRowColumn>{apellidoM}</TableRowColumn>
+            <TableRowColumn>{carrera}</TableRowColumn>
+            <TableRowColumn>{campus}</TableRowColumn>
+          </TableRow>)
+        })}
+      </TableBody>
+    )
+  }
   render () {
     const style = {
       marginLeft: 20
     }
-    const {loginClick} = this
+    const {search} = this.state
     return (
       <div className="list-home">
         <Paper zDepth={2} className="admin-content">
@@ -53,9 +87,22 @@ class ListaAlumn extends React.Component {
               <Link to="/admin/altaAlum" ><RaisedButton label="Alta" primary={true} /></Link>
             </div>
             <div className="search-content">
-              <SearchIcon style={{marginBottom: '-10px'}}/><TextField hintText="Buscar" />
+              <SearchIcon style={{marginBottom: '-10px'}}/><TextField hintText="Buscar" onChange={ event => this.setState({search: event.target.value}) } />
             </div>
           </div>
+          <Table>
+           <TableHeader displaySelectAll={false}
+                    adjustForCheckbox={false} >
+             <TableRow>
+               <TableHeaderColumn>nombre</TableHeaderColumn>
+               <TableHeaderColumn>apellidoP</TableHeaderColumn>
+               <TableHeaderColumn>apellidoM</TableHeaderColumn>
+               <TableHeaderColumn>carrera</TableHeaderColumn>
+               <TableHeaderColumn>campus</TableHeaderColumn>
+             </TableRow>
+           </TableHeader>
+          {this.createTable(search)}
+         </Table>
         </Paper>
       </div>
     )
