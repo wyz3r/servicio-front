@@ -44,6 +44,7 @@
     "postinstall": "flow-typed install --overwrite"
   },
   "dependencies": {
+    "axios": "^0.16.2",
     "material-ui": "^0.18.1",
     "moment": "^2.18.1",
     "react": "^15.4.2",
