@@ -41,7 +41,12 @@ class Login extends React.Component {
       .then(function (response) {
         console.log(response.data.login[0])
         if (response.data.login[0].user === '0') {
-          console.log(response.data.login[0].user)
+          window.location.href = '/admin'
+        }
+        else if (response.data.login[0].user === '1') {
+          window.location.href = '/admin'
+        }
+        else {
           window.location.href = '/admin'
         }
       })
