@@ -5,7 +5,7 @@ import TextField from 'material-ui/TextField'
 import {CardTitle} from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
 import config from '../../data/data.json'
-import urls from '/Users/leonelislasgonzalez/Documents/servicio-front/config.json'
+import urls from '../../../config.json'
 import axios from 'axios'
 
 // import axios from ‘axios’
