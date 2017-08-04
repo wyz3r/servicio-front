@@ -5,9 +5,11 @@ import TextField from 'material-ui/TextField'
 import {CardTitle} from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
 import config from '../../data/data.json'
+import urls from '/Users/leonelislasgonzalez/Documents/servicio-front/config.json'
 import axios from 'axios'
 
 // import axios from ‘axios’
+console.log(urls.devUrl)
 import cookie from 'react-cookie'
 // console.log(config)
 // const configCommunity = window.location.host.split(‘.’)[0]
@@ -35,7 +37,7 @@ class Login extends React.Component {
     const {clave} = this.state
     if (clave) {
       // console.log(clave)
-      axios.post('http://localhost:8080/api/consultatipo.php', {
+      axios.post(urls.devUrl + 'consultatipo.php', {
         cve_ulsa: clave
       })
       .then(function (response) {
@@ -51,7 +53,6 @@ class Login extends React.Component {
         }
       })
       .catch(function (error) {
-        console.log("error")
         console.log(error)
       })
     }
